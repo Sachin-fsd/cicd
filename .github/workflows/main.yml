@@ -34,3 +34,5 @@ jobs:
               run: node --version
             - name: Print Npm version
               run: npm --version
+            - name: Run Eslint
+              run : npx eslint .
