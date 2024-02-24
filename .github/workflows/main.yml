@@ -1,1 +1,33 @@
-#Workflow
+# #Workflow
+##key: value
+# title: Website name
+# description: A website for uploading content
+# #string, array, objects
+
+# tags:
+#     - technology
+#     - images
+#     - creative
+
+# # indentation  matters
+
+# address:
+#     street: MG Road
+#     city: Bng
+#     state: kr
+
+# # env variables
+# value: ${{ env.Value}}
+# variable: ${{ github.VariableName}}
+
+
+name: Github action for
+on:
+    push:
+        branches: [main]
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Print Hello World
+              run: echo "Hello World"
